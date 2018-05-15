@@ -1,0 +1,41 @@
+[
+	{
+		"name": "GenericProtocol.MyFirstModule",
+		"actions": [
+			{
+				"func": "sayHello"
+			}
+			,
+			{
+				"func": "showPopup"
+			},
+			{
+				"func": "sayGoodBye"
+			}
+		]
+	},
+	{
+		"name": "GenericProtocol.MySecondModule",
+		"actions": [
+			{
+				"func": "sayHello"
+			}
+			,
+			{
+				"func": "showPopup"
+			},
+			{
+				"func": "sayGoodBye"
+			}
+		]
+	},
+	{
+		"name": "GenericProtocol.MyThirdModule",
+		"actions": [
+			{
+				"func": "openUrlWithUrl:",
+				"value": "http://google.com"
+			}
+		]
+	}
+]
