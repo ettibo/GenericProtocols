@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     func getModules() {
-        let uri = "https://nofile.io/g/YTx1HiD1Zf7esVy6MsZxffQpOfMehnvuCXrkiRATh02RZECW0fjL0codoJMCrA0b/Protocols.json/"
+        let uri = "https://raw.githubusercontent.com/ettibo/GenericProtocols/master/Protocols.json"
         let completionHandlerHttp : (DataResponse<Any>) -> Void = { response in
             switch response.result {
             case .success:
