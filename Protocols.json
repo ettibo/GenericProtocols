@@ -34,7 +34,7 @@
 		"actions": [
 			{
 				"func": "openUrlWithUrl:",
-				"value": "http://google.com"
+				"value": "https://eleven-labs.com/"
 			}
 		]
 	}
