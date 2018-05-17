@@ -6,7 +6,6 @@
 //  Copyright © 2017 Tibo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 @objc
