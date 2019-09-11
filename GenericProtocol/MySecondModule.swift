@@ -11,12 +11,12 @@ import Foundation
 @objc
 class MySecondModule: NSObject {
     
-    func sayHello() {
+    @objc func sayHello() {
         let name = String(describing: type(of: self))
         print("What's up? My name is \(name)")
     }
     
-    func sayGoodBye() {
+    @objc func sayGoodBye() {
         let name = String(describing: type(of: self))
         print("See you, My name was \(name)")
     }

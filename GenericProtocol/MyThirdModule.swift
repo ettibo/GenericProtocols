@@ -11,7 +11,7 @@ import UIKit
 @objc
 class MyThirdModule: NSObject {
     
-    func openUrl(url: String) {
+    @objc func openUrl(url: String) {
         let uri = URL(string: url)!
         UIApplication.shared.open(uri, options: [:], completionHandler: nil)
     }

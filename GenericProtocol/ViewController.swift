@@ -39,7 +39,6 @@ class ViewController: UIViewController {
                 break
             }
         }
-        
         Alamofire.request(uri, method: .get, headers: nil).validate().responseJSON(completionHandler: completionHandlerHttp)
     }
     
