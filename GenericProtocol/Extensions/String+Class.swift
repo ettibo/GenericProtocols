@@ -12,15 +12,12 @@ import Foundation
 
 
 extension String {
-    
     func convertToClass<T>() -> T.Type? {
         return StringClassConverter<T>.convert(string: self)
     }
-    
 }
 
 class StringClassConverter<T> {
-    
     static func convert(string className: String) -> T.Type? {
         guard let nameSpace = Bundle.main.infoDictionary?["CFBundleExecutable"] as? String else {
             return nil
@@ -29,6 +26,5 @@ class StringClassConverter<T> {
             return nil
         }
         return aClass
-        
     }
 }

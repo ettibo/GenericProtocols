@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		053FFAE0CD3D6019A13E8A60 /* Pods_GenericProtocol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A792DC04C5492D12D1F6452 /* Pods_GenericProtocol.framework */; };
 		11B3F01F1F2226D100CA1575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F01E1F2226D100CA1575 /* AppDelegate.swift */; };
-		11B3F0211F2226D100CA1575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F0201F2226D100CA1575 /* ViewController.swift */; };
+		11B3F0211F2226D100CA1575 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F0201F2226D100CA1575 /* MainViewController.swift */; };
 		11B3F0241F2226D100CA1575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B3F0221F2226D100CA1575 /* Main.storyboard */; };
 		11B3F0261F2226D100CA1575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B3F0251F2226D100CA1575 /* Assets.xcassets */; };
 		11B3F0291F2226D100CA1575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B3F0271F2226D100CA1575 /* LaunchScreen.storyboard */; };
@@ -20,6 +20,9 @@
 		11B3F0531F2227A900CA1575 /* MyThirdModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F0521F2227A900CA1575 /* MyThirdModule.swift */; };
 		11B3F0551F2227F400CA1575 /* String+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F0541F2227F400CA1575 /* String+Class.swift */; };
 		11B3F0591F2230B200CA1575 /* ObjectCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B3F0581F2230B200CA1575 /* ObjectCreator.m */; };
+		23E2BA5026F22A0300815627 /* ModuleRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2BA4F26F22A0300815627 /* ModuleRunner.swift */; };
+		23E2BA5226F22A4800815627 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2BA5126F22A4800815627 /* MainInteractor.swift */; };
+		23E2BA5426F22A5A00815627 /* MainWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2BA5326F22A5A00815627 /* MainWorker.swift */; };
 		5505C45B2D56819DE0ADED6D /* Pods_GenericProtocolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D579E2FAD0CB235111336E62 /* Pods_GenericProtocolTests.framework */; };
 		8B9814F632074CC49E681F28 /* Pods_GenericProtocolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39C5F5F5131D959EB34EA36 /* Pods_GenericProtocolUITests.framework */; };
 		BB669B1C207BA5F7009C8546 /* GenericProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB669B1B207BA5F7009C8546 /* GenericProtocol.swift */; };
@@ -47,7 +50,7 @@
 		037E95535BC6E97ECCC6EA28 /* Pods-GenericProtocolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericProtocolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenericProtocolTests/Pods-GenericProtocolTests.debug.xcconfig"; sourceTree = "<group>"; };
 		11B3F01B1F2226D100CA1575 /* GenericProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B3F01E1F2226D100CA1575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11B3F0201F2226D100CA1575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		11B3F0201F2226D100CA1575 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11B3F0231F2226D100CA1575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11B3F0251F2226D100CA1575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11B3F0281F2226D100CA1575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +68,9 @@
 		11B3F0561F2230B100CA1575 /* GenericProtocol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GenericProtocol-Bridging-Header.h"; sourceTree = "<group>"; };
 		11B3F0571F2230B200CA1575 /* ObjectCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectCreator.h; sourceTree = "<group>"; };
 		11B3F0581F2230B200CA1575 /* ObjectCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectCreator.m; sourceTree = "<group>"; };
+		23E2BA4F26F22A0300815627 /* ModuleRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleRunner.swift; sourceTree = "<group>"; };
+		23E2BA5126F22A4800815627 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		23E2BA5326F22A5A00815627 /* MainWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
 		4A792DC04C5492D12D1F6452 /* Pods_GenericProtocol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericProtocol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5851BD740564A6CA9079DD0E /* Pods-GenericProtocolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericProtocolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenericProtocolTests/Pods-GenericProtocolTests.release.xcconfig"; sourceTree = "<group>"; };
 		798D7F0912533B9606B2FB81 /* Pods-GenericProtocol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericProtocol.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenericProtocol/Pods-GenericProtocol.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,21 +136,19 @@
 		11B3F01D1F2226D100CA1575 /* GenericProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				BB669B1D207BA63B009C8546 /* BinderManager.swift */,
+				23E2BA4C26F229A600815627 /* Screens */,
+				23E2BA4A26F2295800815627 /* Models */,
+				23E2BA4E26F229EF00815627 /* ModuleRunner */,
+				23E2BA4926F2293C00815627 /* Extensions */,
+				23E2BA4726F228EF00815627 /* Managers */,
+				23E2BA4826F2290A00815627 /* Modules */,
+				23E2BA4B26F2297800815627 /* ObjectCreator */,
 				11B3F01E1F2226D100CA1575 /* AppDelegate.swift */,
-				11B3F0201F2226D100CA1575 /* ViewController.swift */,
 				11B3F0221F2226D100CA1575 /* Main.storyboard */,
 				11B3F0251F2226D100CA1575 /* Assets.xcassets */,
 				11B3F0271F2226D100CA1575 /* LaunchScreen.storyboard */,
 				11B3F02A1F2226D100CA1575 /* Info.plist */,
-				11B3F04E1F22271C00CA1575 /* MyFirstModule.swift */,
-				11B3F0501F22278C00CA1575 /* MySecondModule.swift */,
-				11B3F0521F2227A900CA1575 /* MyThirdModule.swift */,
-				11B3F0541F2227F400CA1575 /* String+Class.swift */,
-				11B3F0571F2230B200CA1575 /* ObjectCreator.h */,
-				11B3F0581F2230B200CA1575 /* ObjectCreator.m */,
 				11B3F0561F2230B100CA1575 /* GenericProtocol-Bridging-Header.h */,
-				BB669B1B207BA5F7009C8546 /* GenericProtocol.swift */,
 			);
 			path = GenericProtocol;
 			sourceTree = "<group>";
@@ -165,6 +169,75 @@
 				11B3F0401F2226D100CA1575 /* Info.plist */,
 			);
 			path = GenericProtocolUITests;
+			sourceTree = "<group>";
+		};
+		23E2BA4726F228EF00815627 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BB669B1D207BA63B009C8546 /* BinderManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		23E2BA4826F2290A00815627 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				11B3F04E1F22271C00CA1575 /* MyFirstModule.swift */,
+				11B3F0501F22278C00CA1575 /* MySecondModule.swift */,
+				11B3F0521F2227A900CA1575 /* MyThirdModule.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		23E2BA4926F2293C00815627 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11B3F0541F2227F400CA1575 /* String+Class.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23E2BA4A26F2295800815627 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB669B1B207BA5F7009C8546 /* GenericProtocol.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23E2BA4B26F2297800815627 /* ObjectCreator */ = {
+			isa = PBXGroup;
+			children = (
+				11B3F0571F2230B200CA1575 /* ObjectCreator.h */,
+				11B3F0581F2230B200CA1575 /* ObjectCreator.m */,
+			);
+			path = ObjectCreator;
+			sourceTree = "<group>";
+		};
+		23E2BA4C26F229A600815627 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				23E2BA4D26F229B100815627 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		23E2BA4D26F229B100815627 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11B3F0201F2226D100CA1575 /* MainViewController.swift */,
+				23E2BA5126F22A4800815627 /* MainInteractor.swift */,
+				23E2BA5326F22A5A00815627 /* MainWorker.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		23E2BA4E26F229EF00815627 /* ModuleRunner */ = {
+			isa = PBXGroup;
+			children = (
+				23E2BA4F26F22A0300815627 /* ModuleRunner.swift */,
+			);
+			path = ModuleRunner;
 			sourceTree = "<group>";
 		};
 		6F5C406A2DA8FE4BDC1966FC /* Pods */ = {
@@ -257,7 +330,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = Tibo;
 				TargetAttributes = {
 					11B3F01A1F2226D100CA1575 = {
@@ -410,11 +483,14 @@
 				BB669B1E207BA63B009C8546 /* BinderManager.swift in Sources */,
 				11B3F0511F22278C00CA1575 /* MySecondModule.swift in Sources */,
 				11B3F0591F2230B200CA1575 /* ObjectCreator.m in Sources */,
-				11B3F0211F2226D100CA1575 /* ViewController.swift in Sources */,
+				11B3F0211F2226D100CA1575 /* MainViewController.swift in Sources */,
 				11B3F01F1F2226D100CA1575 /* AppDelegate.swift in Sources */,
+				23E2BA5226F22A4800815627 /* MainInteractor.swift in Sources */,
 				11B3F0531F2227A900CA1575 /* MyThirdModule.swift in Sources */,
 				11B3F04F1F22271C00CA1575 /* MyFirstModule.swift in Sources */,
 				11B3F0551F2227F400CA1575 /* String+Class.swift in Sources */,
+				23E2BA5426F22A5A00815627 /* MainWorker.swift in Sources */,
+				23E2BA5026F22A0300815627 /* ModuleRunner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +571,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -519,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -555,6 +632,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -573,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
