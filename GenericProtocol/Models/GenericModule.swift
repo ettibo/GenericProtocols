@@ -23,7 +23,7 @@ struct GenericAction: Glossy {
     }
 }
 
-struct GenericProtocol: Glossy {
+struct GenericModule: Glossy {
     
     var name: String?
     var realObject: AnyObject?

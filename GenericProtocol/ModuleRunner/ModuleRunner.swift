@@ -9,7 +9,7 @@
 import Foundation
 
 class ModuleRunner {
-    func useModules(modules: [GenericProtocol]) {
+    func useModules(modules: [GenericModule]) {
         for module in modules {
             if let actions = module.actions {
                 for action in actions {

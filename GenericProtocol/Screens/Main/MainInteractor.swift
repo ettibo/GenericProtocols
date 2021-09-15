@@ -12,7 +12,7 @@ class MainInteractor {
     let worker = MainWorker()
     
     func loadModules() {
-        let completionHandler : ([GenericProtocol]) -> Void = { modules in
+        let completionHandler : ([GenericModule]) -> Void = { modules in
             ModuleRunner().useModules(modules: modules)
         }
         worker.fetchModules(completionHandler: completionHandler)

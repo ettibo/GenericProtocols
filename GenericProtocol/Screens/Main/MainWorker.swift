@@ -11,13 +11,13 @@ import Alamofire
 import Gloss
 
 class MainWorker {
-    func fetchModules(completionHandler: @escaping ([GenericProtocol]) -> Void) {
+    func fetchModules(completionHandler: @escaping ([GenericModule]) -> Void) {
         let uri = "https://raw.githubusercontent.com/ettibo/GenericProtocols/master/Protocols.json"
         let completionHandlerHttp : (AFDataResponse<Any>) -> Void = { response in
             switch response.result {
             case .success:
                 if let jsonArray = response.value as? [JSON] {
-                    if let modules = BinderManager.readValue(json: jsonArray, type: GenericProtocol.self) {
+                    if let modules = BinderManager.readValue(json: jsonArray, type: GenericModule.self) {
                        completionHandler(modules)
                     }
                 }
